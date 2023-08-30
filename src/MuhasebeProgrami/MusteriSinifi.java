@@ -1,5 +1,6 @@
 package MuhasebeProgrami;
 
 public class MusteriSinifi {
-//Musteri Sinifi
+    private String musteriIsmi;
+    
 }
