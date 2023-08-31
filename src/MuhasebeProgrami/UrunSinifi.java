@@ -1,5 +1,5 @@
 package MuhasebeProgrami;
-//urun
+
 public class UrunSinifi {
     private String urunIsmi;
     private double urunFiyati;

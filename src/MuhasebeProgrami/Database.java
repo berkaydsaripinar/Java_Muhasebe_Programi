@@ -1,5 +1,5 @@
 package MuhasebeProgrami;
-
+import java.util.*;
 public class Database {
     public static UrunSinifi[] urunler = {
             new UrunSinifi("Gofret", 100.0, 250),
@@ -46,4 +46,67 @@ public class Database {
             new UrunSinifi("Makarna", 3.5, 600),
             new UrunSinifi("Ton Balığı", 18.0, 200),
     };
+    public static ArrayList<UrunSinifi> urunArrayList = new ArrayList<>();
+
+    public static MusteriSinifi[] musteriler = {
+            new MusteriSinifi("Berkay", "Sarıpınar", "berkaysaripinar@gmail.com", 1),
+            new MusteriSinifi("Doğancan", "Öztürk", "dogancan@gmail.com", 2),
+            new MusteriSinifi("Ayşe", "Yılmaz", "ayseyilmaz@gmail.com", 3),
+            new MusteriSinifi("Mehmet", "Kaya", "mehmetkaya@gmail.com", 4),
+            new MusteriSinifi("Zeynep", "Aydın", "zeynepaydin@gmail.com", 5),
+            new MusteriSinifi("Ahmet", "Demir", "ahmetdemir@gmail.com", 6),
+            new MusteriSinifi("Elif", "Özdemir", "elifozdemir@gmail.com", 7),
+            new MusteriSinifi("Cem", "Can", "cemcan@gmail.com", 8),
+            new MusteriSinifi("Aslı", "Aksoy", "asliaksoy@gmail.com", 9),
+            new MusteriSinifi("Emre", "Güneş", "emregunes@gmail.com", 10),
+            new MusteriSinifi("Zehra", "Ateş", "zehraates@gmail.com", 11),
+            new MusteriSinifi("Okan", "Korkmaz", "okankorkmaz@gmail.com", 12),
+            new MusteriSinifi("Selin", "Toprak", "selintoprak@gmail.com", 13),
+            new MusteriSinifi("Batuhan", "Yıldız", "batuhanyildiz@gmail.com", 14),
+            new MusteriSinifi("Ceren", "Kara", "cerenkara@gmail.com", 15),
+            new MusteriSinifi("Murat", "Çelik", "muratcelik@gmail.com", 16),
+            new MusteriSinifi("Ebru", "Kurt", "ebrukurt@gmail.com", 17),
+            new MusteriSinifi("Oğuz", "Türk", "oguzturk@gmail.com", 18),
+            new MusteriSinifi("Yasemin", "Başar", "yaseminbasar@gmail.com", 19),
+            new MusteriSinifi("Ali", "Özkan", "aliozkan@gmail.com", 20),
+            new MusteriSinifi("Fatma", "Yıldırım", "fatmayildirim@gmail.com", 21),
+            new MusteriSinifi("Hüseyin", "Açıkgöz", "huseyinacikgoz@gmail.com", 22),
+            new MusteriSinifi("Gizem", "Kaya", "gizemkaya@gmail.com", 23),
+            new MusteriSinifi("Selim", "Demir", "selimdemir@gmail.com", 24),
+            new MusteriSinifi("Esra", "Akçay", "esraakcay@gmail.com", 25),
+            new MusteriSinifi("Ömer", "Kurtuluş", "omerkurtulus@gmail.com", 26),
+            new MusteriSinifi("Nur", "Doğan", "nurdogan@gmail.com", 27),
+            new MusteriSinifi("Mert", "Ergin", "mertergin@gmail.com", 28),
+            new MusteriSinifi("Seda", "Yılmaz", "sedayilmaz@gmail.com", 29),
+            new MusteriSinifi("Umut", "Güler", "umutguler@gmail.com", 30),
+    };
+    public static ArrayList<MusteriSinifi> musteriArrayList = new ArrayList<>();
+
+    public static UrunSinifi urunBul(String urunAdi){
+        for (UrunSinifi urun : urunArrayList){
+            if (urun.getUrunIsmi().equals(urunAdi)){
+                return urun;
+            }
+        }
+        return null;
+    }
+    public static void urunEkle(UrunSinifi urun) {
+        urunArrayList.add(urun);
+    }
+    public static MusteriSinifi musteriBul(String musteriAdi) {
+        for (MusteriSinifi musteri : musteriArrayList) {
+            if (musteri.getMusteriIsmi().equals(musteriAdi)) {
+                return musteri;
+            }
+        }
+        return null;
+    }
+
+    public static void musteriEkle(MusteriSinifi musteri) {
+        musteriArrayList.add(musteri);
+    }
+
+
 }
+
+
