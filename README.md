@@ -10,4 +10,4 @@
 <li>** #Döngülerle çalışma</li>
 <li>** #Kontorllerle çalışma vb.**</li>
 
-<li> konularında pratik yaptım.</li>
+<i>konularında pratik yaptım.</i>
