@@ -1,6 +1,9 @@
 package MuhasebeProgrami;
+
 import java.util.*;
+
 public class Database {
+
     public static UrunSinifi[] urunler = {
             new UrunSinifi("Gofret", 100.0, 250),
             new UrunSinifi("Bisküvi", 10.5, 150),
@@ -81,18 +84,26 @@ public class Database {
             new MusteriSinifi("Umut", "Güler", "umutguler@gmail.com", 30),
     };
     public static ArrayList<MusteriSinifi> musteriArrayList = new ArrayList<>();
+    public static KarZararSinifi[] karZararVerileri = {
+            new KarZararSinifi(5000.0, 3000.0), // Dönemler
+            new KarZararSinifi(6000.0, 4000.0),
+            new KarZararSinifi(7000.0, 4500.0)
+    };
+    public static ArrayList<KarZararSinifi> karZararSinifiArrayList = new ArrayList<>();
 
-    public static UrunSinifi urunBul(String urunAdi){
-        for (UrunSinifi urun : urunArrayList){
-            if (urun.getUrunIsmi().equals(urunAdi)){
+    public static UrunSinifi urunBul(String urunAdi) {
+        for (UrunSinifi urun : urunArrayList) {
+            if (urun.getUrunIsmi().equals(urunAdi)) {
                 return urun;
             }
         }
         return null;
     }
+
     public static void urunEkle(UrunSinifi urun) {
         urunArrayList.add(urun);
     }
+
     public static MusteriSinifi musteriBul(String musteriAdi) {
         for (MusteriSinifi musteri : musteriArrayList) {
             if (musteri.getMusteriIsmi().equals(musteriAdi)) {
@@ -106,6 +117,40 @@ public class Database {
         musteriArrayList.add(musteri);
     }
 
+    public static void karZararEkle(KarZararSinifi karZararSinifi) {
+        karZararSinifiArrayList.add(karZararSinifi);
+    }
+
+    public static void urunSil(String urunAdi) {
+        UrunSinifi urun = urunBul(urunAdi);
+        if (urun != null) {
+            urunArrayList.remove(urun);
+            System.out.println(urunAdi + " adlı ürün silindi.");
+        } else {
+            System.out.println(urunAdi + " adlı ürün bulunamadı.");
+        }
+    }
+
+
+    public static void urunStokGuncelle(String urunAdi, int yeniStokMiktar) {
+        UrunSinifi urun = urunBul(urunAdi);
+        if (urun != null) {
+            urun.setUrunStok(yeniStokMiktar);
+            System.out.println(urunAdi + " adlı ürünün stok miktarı güncellendi.");
+        } else {
+            System.out.println(urunAdi + " adlı ürün bulunamadı.");
+        }
+    }
+
+    public static void urunFiyatGuncelle(String urunAdi, int yeniFiyat) {
+        UrunSinifi urun = urunBul(urunAdi);
+        if (urun != null) {
+            urun.setUrunFiyati(yeniFiyat);
+            System.out.println(urunAdi + " adlı ürünün fiyatı güncellendi");
+        } else {
+            System.out.println(urunAdi + " adlı ürün bulunamadı");
+        }
+    }
 
 }
 

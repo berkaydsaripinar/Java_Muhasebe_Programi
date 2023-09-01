@@ -11,16 +11,19 @@ public class MusteriSinifi {
         this.musteriNum = musteriNum;
     }
 
-    public String getMusteriIsmi(){
-    return musteriIsmi;
+    public String getMusteriIsmi() {
+        return musteriIsmi;
     }
-    public String getMusteriSoyadi(){
+
+    public String getMusteriSoyadi() {
         return musteriSoyadi;
     }
-    public String getMusteriMail(){
+
+    public String getMusteriMail() {
         return musteriMail;
     }
-    public int getMusteriNum(){
+
+    public int getMusteriNum() {
         return musteriNum;
     }
 
