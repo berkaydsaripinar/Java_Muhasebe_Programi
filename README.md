@@ -1,6 +1,6 @@
 # Java_Muhasebe_Programi
 
- Bu projede genel olarak : 
+<b> Bu projede genel olarak : </b>
 ** #Class'larla çalışma
 ** #Metotlarla çalışma
 ** #Dizilerle çalışma
