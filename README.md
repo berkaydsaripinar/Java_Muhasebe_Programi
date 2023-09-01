@@ -2,12 +2,12 @@
 
 <b> Bu projede genel olarak : </b>
 <li>** #Class'larla çalışma</li>
-** #Metotlarla çalışma
-** #Dizilerle çalışma
-** #Dizilere veri aktarma ve veri çekme
-** #GET-SET komutları**
-** #String metotları
-** #Döngülerle çalışma
-** #Kontorllerle çalışma vb.**
+<li>** #Metotlarla çalışma</li>
+<li>** #Dizilerle çalışma</li>
+<li>** #Dizilere veri aktarma ve veri çekme</li>
+<li>** #GET-SET komutları**</li>
+<li>** #String metotları</li>
+<li>** #Döngülerle çalışma</li>
+<li>** #Kontorllerle çalışma vb.**</li>
 
- konularında pratik yaptım.
+<li> konularında pratik yaptım.</li>
